@@ -1,0 +1,17 @@
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Ambente virtual
+.venv/
+venv/
+
+# Variaveis de ambiente
+.env
+
+# IDE
+.idea
+
+# Checkpoint do Jupyter
+.ipynb_checkpoints
+
