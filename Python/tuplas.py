@@ -1,6 +1,6 @@
 """
 Uma tupla é uma série de elementos e possui as seguintes caracteristicas:
-- Imutavel
+- Imutável
 - Ordenanda
 - Indexada
 - Permite duplicatas

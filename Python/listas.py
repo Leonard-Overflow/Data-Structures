@@ -1,6 +1,6 @@
 """
 Uma lista é uma série de elementos e possui as seguintes caracteristicas:
-- Mutavel
+- Mutável
 - Ordenanda
 - Indexada
 - Permite duplicatas
