@@ -25,3 +25,23 @@ print(Paises.values())
 
 # Vendo todos os pares
 print(Paises.items())
+
+# Atualizando dados
+Paises.update({"Brasil" : "Rio de Janeiro"})
+
+# Inserindo novos dados
+Paises.setdefault("Brasil", "Sao Paulo") # Não insere, pois já existe um valor ligado a Brasil
+Paises.setdefault("Japao", "Toquio") # Funciona, pois não  existe uma chave Japao
+
+# Possui o .pop(com default) e clear
+
+# Removendo e guardando um par
+pais = Paises.popitem()
+print(pais)
+
+# Copiando os valores
+Nacoes = Paises.copy()
+
+# Copiando uma parte
+Estados = Paises.fromkeys(["Brasil", "China"], ["Sao Paulo", "Shanghai"]) # um novo dicionário com Brasil e China com os valores sendo Sao Paulo para Brasil e Shanghai para China
+
