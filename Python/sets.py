@@ -43,4 +43,6 @@ conjunto.issuperset(set) # Se possui set
 conjunto.isdisjoint(set) # Se não possuem elementos em comum
 # Suporta o .copy
 
-
+"""
+Também há a estrurua de dados chamada forzenset que se comporta basicamente como um set, mas apenas de leitura
+"""
