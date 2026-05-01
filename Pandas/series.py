@@ -5,7 +5,7 @@ import pandas as pd
 # Crinado uma serie
 
 # Jeito direto
-serie = pd.Series(values = ("a", "b", "c", "d"), index = (1, 2, 3, 4))
+serie = pd.Series(data = ("a", "b", "c", "d"), index = (1, 2, 3, 4))
 
 # A partir de uma lista ou tupla
 lista = ["a", "b", "c", "d"]
@@ -18,7 +18,7 @@ serie_tupla = pd.Series(tupla)
 
 # É possível fazer o mesmo com um dicionário, mas nesse caso as chaves viram os indices
 
-dict = {
+dicionario = {
     1 : "a",
     2 : "b",
     3 : "c",
@@ -29,7 +29,7 @@ serie_dict = pd.Series(dict)
 
 # Repetindo um valor para todas as colunas
 
-colunas = pd.Series(values = 7, index = [1, 2, 3, 4])
+colunas = pd.Series(data = 7, index = [1, 2, 3, 4])
 
 # Series permitem operações de fatiamento, filtro, operações matemáticas
 
@@ -41,7 +41,7 @@ serie.get(2, 0) # Retorna 0 se não encontrar
 
 # Em relação aos nulos
 serie.isnull() # Retorna True para todos os nulos que encontrar
-serie.notnull() # Retona False pata todos os nulos que encontrar
+serie.notnull() # Retona True para todos os não nulos que encontrar
 serie.fillna(0) # Substitui os nullos pelo valor passado. Pode ser usado com methods como ffill(substitui pelo anterior), bfill(substitui pelo posterior), etc
 
 # Estatístisca
@@ -52,8 +52,8 @@ serie.count()
 # etc
 
 # Atrtibutos utéis
-serie.values()
-serie.index()
+values = serie.values
+index = serie.index
 dtype = serie.dtype
 shape = serie.shape
 name = serie.name
